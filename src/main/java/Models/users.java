@@ -1,14 +1,20 @@
 package Models;
 
+import javax.persistence.*;
+
+@Entity
 public class users
 {
 
+    @Id
+    @GeneratedValue
     int id;
+
     String name;
     String family;
     String national_id;
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
